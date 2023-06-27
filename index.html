@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        background-image: url(IMG-20220810-WA0083.jpg);
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* display: flexbox; */
+    }
+    
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 14px;
+        top: 20px;
+    }
+    
+    .left img {
+        width: 75px;
+        filter: invert(20%);
+    }
+    
+    .left div {
+        text-align: center;
+    }
+    
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+    
+    .right {
+        position: absolute;
+        top: 20px;
+        right: 14px;
+        display: inline-block;
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 21px;
+    }
+    
+    .navbar li a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    .navbar li a:hover {
+        color: rgb(204, 36, 36);
+    }
+    
+    .btn {
+        margin: 0% 9px;
+        color: rgb(19, 10, 10);
+        padding: 4px 5px;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        margin: 0% 9px;
+        background-color: rgb(187, 189, 189);
+        color: rgb(187, 117, 25);
+    }
+    
+    .container {
+        margin-top: 75px;
+        margin-left: 20px;
+        padding: 20px 10px;
+        width: 30%;
+        /* border: 2px solid rgb(12, 12, 12); */
+        border-radius: 10px;
+        box-shadow: inset;
+    }
+    /* .pictures {
+        display: inline-block;
+        position: absolute;
+    }
+    
+    .pictures.pic img {
+        width: 20px;
+        margin-top: 60px;
+    } */
+    
+    .formgroup {
+        /* margin: auto;
+        padding: 2px; */
+        /* border: 1px solid white; */
+        border-radius: 10px;
+        background-color: rgb(14, 13, 15);
+        color: white;
+        width: 60%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .formgroup input {
+        text-align: right top;
+        display: inline-block;
+        border-radius: 10px;
+        width: 100px;
+        padding: 6px;
+        margin: 3px auto;
+    }
+    
+    .formgroup select {
+        display: inline;
+        text-align: center;
+    }
+    
+    .formgroup .cLANG {
+        text-align: center;
+        display: inline;
+        padding: 0px;
+    }
+    
+    .pics {
+        position: absolute;
+        top: 35%;
+        left: 34%;
+        display: inline-block;
+        display: flexbox;
+    }
+    
+    #about {
+        width: 20%;
+        border: 2px solid grey;
+        background-color: black;
+        color: white;
+        font-size: small;
+        position: absolute;
+        top: 200px;
+        right: 40px;
+        display: inline-block;
+    }
+    /* footer {
+        background-color: black;
+        color: 2px solid white;
+        width: 100%;
+    } */
+    
+    footer {
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 10px;
+    }
+    
+    footer {
+        position: absolute;
+        left: 45%;
+        top: 95%;
+        background-color: black;
+    }
+    
+    footer.f {
+        color: white;
+        align-items: center;
+    }
+    
+    */
+</style>
+
+<body>
+    <header class="header">
+        <!-- leftbox for logo-->
+
+        <div class="left">
+            <img src="-6260075723851150382_121.jpg" alt="display picture"><small width="30px">PRIYA KUMARI <sup>FULL STACK DEVELOPER</sup></small>
+
+
+        </div>
+        <!--midbox for nav-->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li> <a href="home.h">home</a></li>
+                <li> <a href="about.h">about us</a></li>
+                <li> <a href="fitnessCal.h">fitness calculater</a></li>
+                <li> <a href="contact.h">contact us</a></li>
+
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+    <div class="container">
+
+
+        <!-- <div class="pictures">
+        <div class="pic">
+            <img src="IMG-20220810-WA0083.jpg" alt="pic">
+        </div>
+        <div class="sispic">
+            <img src="IMG_20221204_123600.jpg" alt="sis pic">
+        </div>
+        <div class="ownpic">
+            <img src="-6260075723851150366_121.jpg" alt="own pic">
+        </div>
+
+    </div> -->
+        <h1>JOIN THIS PAGE AND APPLY THIS COURSE </h1>
+        <form action="reaction.php">
+            <div class="formgroup">
+                <label for="name">
+    NAME: 
+    <input type="text" id="name" placeholder="enter your full name">
+    
+   
+</label> <br> SELECT CURRENT COURSE:
+                <select value="course">
+                    <option type="option" name="course" id="course">select courses</option>
+                    <option type="option" name="course" id="course">BCA</option>
+                    <option type="option" name="course" id="course">BBA</option>
+                    <option type="option" name="course" id="course">MCA</option>
+                    <option type="option" name="course" id="course">MBA</option>
+                </select>
+                <br> CHOOSE YOUR SKILL:
+                <!-- <label for="LANG" id="Clanguage"> -->
+                <input type="checkbox" class="cLANG" value="C" name="C" id="Clanguage"> Clanguage
+                <input type="checkbox" class="cLANG" value="C++" name="C++" id="C++">C++
+                <input type="checkbox" class="cLANG" value="JAVA" name="JAVA" id="JAVA">JAVA
+                <input type="checkbox" class="cLANG" value="PYTHON" name="PYTHON" id="PYTHON">PYTHON
+                <!-- </label> -->
+
+                <!-- <label for="LANG" id="C++">
+                    
+                </label>
+                <label for="LANG" id="JAVA">
+                    
+                </label>
+                <label for="LANG" id="PYTHON">
+                    
+                </label> -->
+                <BR></BR>
+                <button class="btn">submit</button>
+
+            </div>
+        </form>
+    </div>
+    <div class="pics">
+
+        <img src="-6260075723851150370_121.jpg" width="200px" alt="ganga">
+        <img src="-6260075723851150374_121.jpg" width="200px" alt="ganga">
+
+    </div>
+    <div id="about">
+        <h2>About this website</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae maxime non ipsam accusantium vero dicta, ducimus sint, eaque iure nulla suscipit necessitatibus veniam id officiis a atque soluta quo quas doloribus consequatur illum? Facere odio,
+            mollitia itaque tenetur beatae molestias provident dicta libero consectetur tempore! Natus suscipit iusto delectus sapiente.</p>
+    </div>
+    <footer class="f">
+        copyright &copy; THIS site is personal.
+    </footer>
+</body>
+
+</html>
